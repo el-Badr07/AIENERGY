@@ -1,0 +1,99 @@
+{
+  "invoice": {
+    "provider": "LYDEC",
+    "invoice_number": "201850448855",
+    "issue_date": null,
+    "due_date": null,
+    "customer_name": null,
+    "customer_id": null,
+    "total_amount": 37.11,
+    "period_start": "2018-03-01",
+    "period_end": "2018-04-01",
+    "total_kwh": 28617,
+    "rate_per_kwh": null,
+    "peak_kwh": 6123,
+    "off_peak_kwh": 6898,
+    "items": [
+      {
+        "description": "CONSO. H. NORMALES",
+        "quantity": 15596,
+        "unit_price": 0.88606,
+        "total": 13818.99
+      },
+      {
+        "description": "CONSO. H. CREUSES",
+        "quantity": 6898,
+        "unit_price": 0.64895,
+        "total": 4476.46
+      },
+      {
+        "description": "CONSO. H. DE POINTE",
+        "quantity": 6123,
+        "unit_price": 1.24185,
+        "total": 7603.85
+      },
+      {
+        "description": "RDV. DE PUISSANCE",
+        "quantity": 5,
+        "unit_price": 449.67,
+        "total": 2248.35
+      },
+      {
+        "description": "ENTRETIEN COMPTAGE",
+        "quantity": 1,
+        "unit_price": 577.93,
+        "total": 577.93
+      },
+      {
+        "description": "LOCATION COMPTAGE",
+        "quantity": 1,
+        "unit_price": 450.31,
+        "total": 450.31
+      },
+      {
+        "description": "DEPASS. DE PUISSANCE",
+        "quantity": 7.5,
+        "unit_price": 449.67,
+        "total": 3372.53
+      }
+    ],
+    "taxes": {
+      "7%": 31.52,
+      "14%": 4412.82,
+      "20%": 115.59
+    },
+    "id": "99dd1ce1-759a-4f6b-a4e3-e744e1b6b0a4",
+    "file_path": "C:\\Users\\HP\\Documents\\github_project\\AIENERGY\\backend\\static\\uploads\\8abb35e7-da83-4181-95d8-d1aeb6c294ee_WhatsApp_Image_2025-05-27_at_02.39.16_25d1e5b6.jpg"
+  },
+  "analysis": {
+    "issues": [
+      {
+        "description": "Facteur de puissance (cos φ) < 0,93 non détecté, mais absence de données sur le facteur de puissance",
+        "severity": "low"
+      },
+      {
+        "description": "Puissance appelée > 110 % de la puissance souscrite, pénalités de dépassement appliquées",
+        "severity": "high"
+      },
+      {
+        "description": "Puissance souscrite trop élevée par rapport à la puissance réellement appelée, surcoût mensuel inutile possible",
+        "severity": "medium"
+      },
+      {
+        "description": "Consommation concentrée durant les heures pleines (HP), coût élevé de l'énergie",
+        "severity": "medium"
+      }
+    ]
+  },
+  "recommendations": {
+    "recommendations": [
+      "L'installation de batteries de condensateurs est recommandée pour corriger le facteur de puissance, réduire la puissance réactive et éviter les pénalités mensuelles.",
+      "L'étalement des démarrages, une meilleure gestion des appels de charge et/ou l'utilisation de dispositifs de lissage (peak shaving) sont recommandés pour réduire les pics de puissance et éviter les surcoûts liés aux dépassements.",
+      "Il est recommandé d'analyser les historiques de charge pour ajuster la puissance souscrite au niveau optimal, en veillant à ce qu'elle soit légèrement supérieure à la puissance maximale réellement consommée pour éviter les frais inutiles.",
+      "Il est conseillé de transférer la consommation des équipements non critiques vers les heures creuses ou normales, en programmant leur fonctionnement pendant ces périodes moins coûteuses."
+    ],
+    "potential_savings": null,
+    "efficiency_score": 60,
+    "invoice_id": "99dd1ce1-759a-4f6b-a4e3-e744e1b6b0a4"
+  }
+}

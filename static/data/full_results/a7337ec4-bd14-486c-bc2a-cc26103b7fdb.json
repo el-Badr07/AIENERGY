@@ -1,0 +1,99 @@
+{
+  "invoice": {
+    "provider": null,
+    "invoice_number": "201744205409",
+    "issue_date": null,
+    "due_date": null,
+    "customer_name": null,
+    "customer_id": null,
+    "total_amount": 41646.72,
+    "period_start": "2017-01-01",
+    "period_end": "2017-02-01",
+    "total_kwh": 32649,
+    "rate_per_kwh": null,
+    "peak_kwh": 7104,
+    "off_peak_kwh": 9018,
+    "items": [
+      {
+        "description": "CONSO. H. NORMALES",
+        "quantity": 16527,
+        "unit_price": 0.88606,
+        "total": 14643.91
+      },
+      {
+        "description": "CONSO. H. CREUSES",
+        "quantity": 9018,
+        "unit_price": 0.64895,
+        "total": 5852.23
+      },
+      {
+        "description": "CONSO. H. DE POINTE",
+        "quantity": 7104,
+        "unit_price": 1.24185,
+        "total": 8822.1
+      },
+      {
+        "description": "RDV. DE PUISSANCE",
+        "quantity": 5,
+        "unit_price": 449.67,
+        "total": 2248.35
+      },
+      {
+        "description": "ENTRETIEN COMPTAGE",
+        "quantity": 1,
+        "unit_price": 577.93,
+        "total": 577.93
+      },
+      {
+        "description": "LOCATION COMPTAGE",
+        "quantity": 1,
+        "unit_price": 450.31,
+        "total": 450.31
+      },
+      {
+        "description": "DEPASS. DE PUISSANCE",
+        "quantity": 8.75,
+        "unit_price": 449.67,
+        "total": 3934.61
+      }
+    ],
+    "taxes": {
+      "7%": 31.52,
+      "14%": 4970.17,
+      "20%": 115.59
+    },
+    "id": "a7337ec4-bd14-486c-bc2a-cc26103b7fdb",
+    "file_path": "C:\\Users\\HP\\Documents\\github_project\\AIENERGY\\backend\\static\\uploads\\62b1db39-8040-42e9-aa79-c4bc0b683714_WhatsApp_Image_2025-05-27_at_02.39.21_840dc34f.jpg"
+  },
+  "analysis": {
+    "issues": [
+      {
+        "description": "Pénalités sur la puissance réactive",
+        "severity": "medium"
+      },
+      {
+        "description": "Puissance appelée supérieure à 110% de la puissance souscrite",
+        "severity": "high"
+      },
+      {
+        "description": "Puissance souscrite trop élevée par rapport à la puissance réellement appelée",
+        "severity": "low"
+      },
+      {
+        "description": "Consommation concentrée durant les heures pleines (HP)",
+        "severity": "medium"
+      }
+    ]
+  },
+  "recommendations": {
+    "recommendations": [
+      "L'installation de batteries de condensateurs pour corriger le facteur de puissance, réduire la puissance réactive et éviter les pénalités mensuelles.",
+      "L'étalement des démarrages, une meilleure gestion des appels de charge et/ou l'utilisation de dispositifs de lissage (peak shaving) pour réduire les pics de puissance et éviter les surcoûts liés aux dépassements.",
+      "Analyser les historiques de charge pour ajuster la puissance souscrite au niveau optimal, en veillant à ce qu'elle soit légèrement supérieure à la puissance maximale réellement consommée pour éviter les frais inutiles.",
+      "Transférer la consommation des équipements non critiques vers les heures creuses ou normales, en programmant leur fonctionnement pendant ces périodes moins coûteuses."
+    ],
+    "potential_savings": 10523.41,
+    "efficiency_score": 60,
+    "invoice_id": "a7337ec4-bd14-486c-bc2a-cc26103b7fdb"
+  }
+}
